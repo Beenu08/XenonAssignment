@@ -1,0 +1,79 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* expeiment area */
+
+body{
+    background-color: rgb(167, 173, 171);
+    height: 100vh;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    height: 70vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.heading{
+    font-size: x-large;
+    font-family: cursive;
+    margin-bottom: 17px;
+}
+
+.inputs{
+    width: 85%;
+    border: none;
+    padding: 14px 25px;
+    color: gray;
+    border-radius: 37px;
+}
+
+#button{
+    cursor: pointer;
+    padding: 9px 33px;
+    border: none;
+    border-radius: 28px;
+    color: gainsboro;
+    background-color: rebeccapurple;
+}
+
+.message{
+    height: 50px;
+}
+
+.logout{
+    cursor: pointer;
+    padding: 9px 33px;
+    border: none;
+    border-radius: 28px;
+    color: gainsboro;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.ourpage{
+    cursor: pointer;
+    padding: 9px 33px;
+    border: none;
+    border-radius: 28px;
+    color: gainsboro;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 15px;
+    right: 134px;
+}

@@ -1,0 +1,178 @@
+/* variables */
+:root{
+    --form_alert-clr: #ea4335;
+    --btn-clr-b: #00a8ff;
+    --lable-clr-d: #999;
+    --lable-clr-active: #4285F4;
+    --inp-default-border: 1px solid #999;
+    --inp-active-border: 2.9px solid  #4285F4;
+    --inp-width: calc(100% - 10%);
+    --fast-transition: all .2s linear;
+}
+
+#form_container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    height: 438px;
+    width: 335px;
+    box-shadow: 0 10px 15px 5px rgba(92, 91, 91, 0.1);
+    border-radius: 22px;
+    display: grid;
+    padding: 5px;
+    position: relative;
+}
+
+.form .title h1{
+    display: inline-block;
+    font-size: 2rem;
+    color: var(--btn-clr-b);
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 0 0px 20px;
+}
+
+.form .inp__container{
+    position: relative;
+    height: 50px;
+    width: var(--inp-width);
+    margin: auto;
+    /* background-color: red; */
+}
+
+.form .inp__message__container{
+    position: relative;
+    height: 99px;
+    width: var(--inp-width);
+    margin: auto;
+    /* background-color: red; */
+}
+
+.form .inp__container input,
+.form .inp__message__container textarea{
+    color: rgba(0,0,0,.9);
+    font-weight: 500;
+    transition: var(--fast-transition);
+}
+
+.form .inp__container input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: var(--inp-default-border);
+    border-radius: 8px;
+    padding: 20px 20px 20px 15px;
+    outline: none;
+    text-transform: capitalize;
+    transition: var(--fast-transition);
+}
+
+.form .inp__message__container textarea{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: var(--inp-default-border);
+    border-radius: 8px;
+    padding: 17px;
+    outline: none;
+    transition: var(--fast-transition);
+}
+
+.form .inp__container input + label,
+.form .inp__message__container textarea + label{
+    transition: var(--fast-transition);
+}
+
+.form .inp__container input + label{
+    position: absolute;
+    top: 51%;
+    left: 9%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: var(--lable-clr-d);
+    text-transform: capitalize;
+}
+
+.form .inp__message__container textarea + label{
+    position: absolute;
+    top: 18%;
+    left: 7%;
+    font-size: 1.4rem;
+    color: var(--lable-clr-d);
+    text-transform: capitalize;
+}
+
+.form .inp__container input:focus,
+.form .inp__message__container textarea:focus{
+    border: var(--inp-active-border);
+}
+
+.form .inp__container input:focus + label,
+.form .inp__message__container textarea:focus + label{
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    color: var(--lable-clr-active);
+    text-transform: capitalize;
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+.form .inp__container input:valid + label,
+.form .inp__message__container textarea:valid + label{
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    color: var(--lable-clr-active);
+    text-transform: capitalize;
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+.form .inp__container input:valid,
+.form .inp__message__container textarea:valid{
+    border: var(--inp-active-border);
+}
+
+.form .inp__container input#signin{
+    padding: 0px;
+    border: none;
+    background-color: var(--btn-clr-b);
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    width: 48%;
+}
+
+.form .inp__container input#signin:hover{
+    background-color: #089ce6;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+}
+
+.form .inp__container input#signup{
+    padding: 0px;
+    border: none;
+    background-color: var(--btn-clr-b);
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    width: 48%;
+    margin-left: 50%;
+}
+
+.form .inp__container input#signup:hover{
+    background-color: #089ce6;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+}
